@@ -1,0 +1,29 @@
+<resources>
+    <string name="app_name">AnimView</string>
+
+    <declare-styleable name="TextAnimView">
+        <attr name="tva_text" format="string" />
+        <attr name="tva_textColor" format="color" />
+        <attr name="tva_textSize" format="dimension" />
+        <attr name="tva_typeface" format="integer" />
+        <attr name="tva_fontFamily" format="string" />
+        <attr name="tva_textStyle" format="enum">
+            <enum name="normal" value="0" />
+            <enum name="bold" value="1" />
+            <enum name="italic" value="2" />
+            <enum name="bold_italic" value="3" />
+        </attr>
+        <attr name="tva_textAllCaps" format="boolean" />
+        <attr name="tva_text_animation_duration" format="integer" />
+
+        <!--<attr name="tva_animation" format="enum">-->
+            <!--<enum name="bounce" value="0" />-->
+        <!--</attr>-->
+
+        <attr name="tva_bounce_effect" format="dimension" />
+        <attr name="tva_bounce_duration" format="integer" />
+        <attr name="tva_bounce_reload_duration" format="integer" />
+
+        <!--<attr name="tva_progress_indeterminate" format="boolean" />-->
+    </declare-styleable>
+</resources>
