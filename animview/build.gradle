@@ -54,7 +54,7 @@ install {
         pom.project {
             name 'Android AnimView'
             description ''
-            url 'https://github.com/brachior/android-stackview'
+            url 'https://github.com/brachior/android-animview'
             inceptionYear '2017'
 
             packaging 'aar'
@@ -64,13 +64,13 @@ install {
 
             licenses {
                 license {
-                    name 'GNU General Public Licence (GPL)'
-                    url 'https://www.gnu.org/licenses/gpl.html'
+                    name 'Do What the Fuck You Want to Public License (WTFPL)'
+                    url 'http://www.wtfpl.net/'
                 }
             }
             scm {
-                connection 'https://github.com/brachior/android-stackview.git'
-                url 'https://github.com/brachior/android-stackview'
+                connection 'https://github.com/brachior/android-animview.git'
+                url 'https://github.com/brachior/android-animview'
 
             }
             developers {
