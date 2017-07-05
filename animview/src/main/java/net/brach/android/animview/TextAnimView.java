@@ -77,7 +77,7 @@ public class TextAnimView extends RelativeLayout {
         text = a.getString(R.styleable.TextAnimView_tva_text);
         textColor = a.getColor(R.styleable.TextAnimView_tva_textColor, Color.BLACK);
 
-        textSize = a.getDimensionPixelSize(R.styleable.TextAnimView_tva_textSize, 10);
+        textSize = a.getDimension(R.styleable.TextAnimView_tva_textSize, 10);
         typefaceIndex = a.getInt(R.styleable.TextAnimView_tva_typeface, -1);
         fontFamily = a.getString(R.styleable.TextAnimView_tva_fontFamily);
         textStyleIndex = a.getInt(R.styleable.TextAnimView_tva_textStyle, 0);
@@ -107,7 +107,7 @@ public class TextAnimView extends RelativeLayout {
             return;
         }
 
-        textView = createTextView(getContext(), text);
+        textView = createTextView(context, text);
         addView(textView);
         ((MarginLayoutParams) textView.getLayoutParams()).setMargins(0, bounceEffect / 2, 0, 0);
 
@@ -412,7 +412,7 @@ public class TextAnimView extends RelativeLayout {
     private TextView createTextView(Context ctx, String text) {
         TextView textView = new TextView(ctx);
         textView.setTextColor(textColor);
-        textView.setTextSize(textSize);
+        textView.setTextSize(TypedValue.COMPLEX_UNIT_PX, textSize);
         textView.setText(text);
         setTypeface(textView);
         return textView;
