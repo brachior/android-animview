@@ -30,10 +30,17 @@ import static android.view.Gravity.BOTTOM;
 import static android.view.Gravity.CENTER;
 
 public class TextAnimView extends RelativeLayout {
-    // text style
+    // text typeface
+    private static final int DEFAULT = 0;
     private static final int SANS = 1;
     private static final int SERIF = 2;
     private static final int MONOSPACE = 3;
+
+    // text style
+    private static final int NORMAL = 0;
+    private static final int BOLD = 1;
+    private static final int ITALIC = 2;
+    private static final int BOLD_ITALIC = 3;
 
     // animation type
 //    private static final int BOUNCE = 0;
@@ -78,9 +85,9 @@ public class TextAnimView extends RelativeLayout {
         textColor = a.getColor(R.styleable.TextAnimView_tva_textColor, Color.BLACK);
 
         textSize = a.getDimension(R.styleable.TextAnimView_tva_textSize, 10);
-        typefaceIndex = a.getInt(R.styleable.TextAnimView_tva_typeface, -1);
+        typefaceIndex = a.getInt(R.styleable.TextAnimView_tva_typeface, DEFAULT);
         fontFamily = a.getString(R.styleable.TextAnimView_tva_fontFamily);
-        textStyleIndex = a.getInt(R.styleable.TextAnimView_tva_textStyle, 0);
+        textStyleIndex = a.getInt(R.styleable.TextAnimView_tva_textStyle, NORMAL);
         textAllCaps = a.getBoolean(R.styleable.TextAnimView_tva_textAllCaps, false);
         textAnimationDuration = a.getInt(R.styleable.TextAnimView_tva_text_animation_duration, 300);
 

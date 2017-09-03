@@ -5,7 +5,12 @@
         <attr name="tva_text" format="string" />
         <attr name="tva_textColor" format="color" />
         <attr name="tva_textSize" format="dimension" />
-        <attr name="tva_typeface" format="integer" />
+        <attr name="tva_typeface" format="enum">
+            <enum name="normal" value="0" />
+            <enum name="sans" value="1" />
+            <enum name="serif" value="2" />
+            <enum name="monospace" value="3" />
+        </attr>
         <attr name="tva_fontFamily" format="string" />
         <attr name="tva_textStyle" format="enum">
             <enum name="normal" value="0" />
